@@ -19,6 +19,18 @@ public class MergeSortedArray {
 
     }
 
+    /**
+     *
+     * 注意点:要注意nums1有效元素为0(m=0)的情况, num2的所有元素都比nums1的大(nums[0] >= nums[length-1])的情况
+     *
+     * 思路: 找到nums2的元素在nums1中应该插入的位置(nums2元素<nums1元素的第一个位置, index),然后将nums1的index元素后的元素向后以后
+     *      将nums2的元素插入
+     *
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         if (m == 0) {
             for (int i = 0; i < n; i++) {
