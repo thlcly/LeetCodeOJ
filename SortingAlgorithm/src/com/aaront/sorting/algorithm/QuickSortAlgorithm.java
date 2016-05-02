@@ -1,15 +1,14 @@
-package com.aaront.sorting;
+package com.aaront.sorting.algorithm;
 
 /**
  * @author tonyhui
  * @since 16/5/2
  */
-public class QuickSortAlgorithm extends BaseAlgorithm{
-    public static void main(String[] args) {
-        int[] array = new int[]{2, 3, 2, 4, 3, 5, 7, 9, 5, 3, 5, 67, 8, 7, 5, 3, 2, 45, 6, 8, 9, 2};
-        QuickSortAlgorithm quickSortAlgorithm = new QuickSortAlgorithm();
-        quickSortAlgorithm.quickAlgorithm(array, 0, array.length - 1);
-        quickSortAlgorithm.print(array);
+public class QuickSortAlgorithm extends BaseAlgorithm implements SortAlgorithm{
+    @Override
+    public void sort(int[] array) {
+        System.out.println("快速排序...");
+        quickAlgorithm(array, 0, array.length - 1);
     }
 
     /**

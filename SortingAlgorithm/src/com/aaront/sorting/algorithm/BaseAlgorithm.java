@@ -1,4 +1,4 @@
-package com.aaront.sorting;
+package com.aaront.sorting.algorithm;
 
 import java.util.Arrays;
 

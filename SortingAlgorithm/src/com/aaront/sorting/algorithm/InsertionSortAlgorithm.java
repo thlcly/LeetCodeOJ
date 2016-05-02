@@ -1,15 +1,14 @@
-package com.aaront.sorting;
+package com.aaront.sorting.algorithm;
 
 /**
  * @author tonyhui
  * @since 16/5/1
  */
-public class InsertionSortAlgorithm extends BaseAlgorithm{
-    public static void main(String[] args) {
-        int[] array = new int[]{2, 3, 2, 4, 3, 5, 7, 9, 5, 3, 5, 67, 8, 7, 5, 3, 2, 45, 6, 8, 9, 2};
-        InsertionSortAlgorithm insertionSortAlgorithm = new InsertionSortAlgorithm();
-        insertionSortAlgorithm.insertionAlgorithm(array);
-        insertionSortAlgorithm.print(array);
+public class InsertionSortAlgorithm extends BaseAlgorithm implements SortAlgorithm{
+    @Override
+    public void sort(int[] array) {
+        System.out.println("插入排序...");
+        insertionAlgorithm(array);
     }
 
     /**
