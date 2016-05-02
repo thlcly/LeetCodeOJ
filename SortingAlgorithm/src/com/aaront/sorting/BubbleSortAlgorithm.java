@@ -1,17 +1,15 @@
 package com.aaront.sorting;
 
-import java.util.Arrays;
-
 /**
  * @author tonyhui
  * @since 16/5/1
  */
-public class BubbleSortAlgorithm {
+public class BubbleSortAlgorithm extends BaseAlgorithm{
     public static void main(String[] args) {
         int[] array = new int[]{2, 3, 2, 4, 3, 5, 7, 9, 5, 3, 5, 67, 8, 7, 5, 3, 2, 45, 6, 8, 9, 2};
         BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
         bubbleSortAlgorithm.bubbleSort(array);
-        System.out.println(Arrays.toString(array));
+        bubbleSortAlgorithm.print(array);
     }
 
     /**

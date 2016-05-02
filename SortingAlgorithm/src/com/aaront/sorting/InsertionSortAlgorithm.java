@@ -1,17 +1,15 @@
 package com.aaront.sorting;
 
-import java.util.Arrays;
-
 /**
  * @author tonyhui
  * @since 16/5/1
  */
-public class InsertionSortAlgorithm {
+public class InsertionSortAlgorithm extends BaseAlgorithm{
     public static void main(String[] args) {
         int[] array = new int[]{2, 3, 2, 4, 3, 5, 7, 9, 5, 3, 5, 67, 8, 7, 5, 3, 2, 45, 6, 8, 9, 2};
         InsertionSortAlgorithm insertionSortAlgorithm = new InsertionSortAlgorithm();
         insertionSortAlgorithm.insertionAlgorithm(array);
-        System.out.println(Arrays.toString(array));
+        insertionSortAlgorithm.print(array);
     }
 
     /**
@@ -32,12 +30,6 @@ public class InsertionSortAlgorithm {
                 j--;
             }
             array[j + 1] = key;
-        }
-    }
-
-    public void move(int[] array, int start, int end) {
-        for (int i = end; i > start; i--) {
-            array[i] = array[i - 1];
         }
     }
 }
