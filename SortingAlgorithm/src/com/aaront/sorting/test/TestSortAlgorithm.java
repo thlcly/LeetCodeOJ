@@ -38,5 +38,18 @@ public class TestSortAlgorithm {
         sortAlgorithm = sortAlgorithmFactory.buildSortAlgorithm();
         sortAlgorithm.sort(testArray);
         sortAlgorithm.print(testArray);
+
+        // 堆排序
+        sortAlgorithmFactory = new HeapSortAlgorithmFactory();
+        sortAlgorithm = sortAlgorithmFactory.buildSortAlgorithm();
+        sortAlgorithm.sort(testArray);
+        sortAlgorithm.print(testArray);
+
+        // 希尔排序
+        int[] testArray1 = new int[]{2, 3, 2, 4, 3, 5, 7, 9, 5, 3, 5, 67, 8, 7, 5, 3, 2, 45, 6, 8, 9, 2};
+        sortAlgorithmFactory = new ShellSortAlgorithmFactory();
+        sortAlgorithm = sortAlgorithmFactory.buildSortAlgorithm();
+        sortAlgorithm.sort(testArray1);
+        sortAlgorithm.print(testArray1);
     }
 }
